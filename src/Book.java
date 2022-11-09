@@ -1,4 +1,5 @@
 //Name:Stephen Walsh ID:21334234
+//Integrated into Jira for ease of access
 public class Book {
     private String name; //Name of the book
     private String genre; //Genre of the book eg science, fiction etc...
@@ -17,7 +18,5 @@ public class Book {
     public boolean isAvailable() {
         return available;
     }
-    
-
 
 }
