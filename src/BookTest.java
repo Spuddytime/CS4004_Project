@@ -35,4 +35,11 @@ class BookTest {
         assertEquals(14, a.getLengthOfRent());
     }
 
+    @Test
+    //Test will change the name from maths 2 to Science 2 and should then pass its test
+    void setName(){
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        a.setName("Science 2");
+        assertEquals("Science 2", a.getName());
+    }
 }
