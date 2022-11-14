@@ -1,5 +1,7 @@
-//Name:Stephen Walsh ID:21334234
+//Name:Stephen Walsh ID:21334234 done in IntelliJ with Java 18
 //Integrated into Jira for ease of access: KEY for integration is PROJECT-9
+
+//Not Finished
 public class Book {
     private String name; //Name of the book
     private String genre; //Genre of the book eg science, fiction etc...
