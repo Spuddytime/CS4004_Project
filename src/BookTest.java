@@ -6,7 +6,33 @@ class BookTest {
 
     @Test
     void getName() {
-        Book a = new Book("Maths 2","Education","Maths Department",true);
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
         assertEquals("Maths 2", a.getName());
     }
+
+    @Test
+    void getDepartment() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        assertEquals("Maths Department", a.getDepartment());
+    }
+
+    @Test
+    void getGenre() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        assertEquals("Education", a.getGenre());
+    }
+
+    //These 2 Fail as we have not set up these 2 methods yet
+    @Test
+    void getLateFee() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        assertEquals(3.50, a.getLateFee());
+    }
+
+    @Test
+    void getLengthOfRent() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        assertEquals(14, a.getLengthOfRent());
+    }
+
 }

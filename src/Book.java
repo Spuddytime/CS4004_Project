@@ -11,6 +11,11 @@ public class Book {
     private double lateFee; // Fee for late returns to deter tardiness, May go up the more late it is
 
 
+    public Book() {
+
+    }
+
+
     public Book(String name, String genre, String department, boolean available){
         this.name = name;
         this.genre = genre;
