@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Departments {
     private String name;
     private String type;
-    private double budget;
     private ArrayList<Book> departmentBooks = new ArrayList<>(); // Need a way to see what books the department has
     private ArrayList<Book> unavailableBooks = new ArrayList<>(); // When a book is rented it goes in here
 
