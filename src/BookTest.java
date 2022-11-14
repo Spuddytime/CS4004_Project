@@ -36,10 +36,18 @@ class BookTest {
     }
 
     @Test
-    //Test will change the name from maths 2 to Science 2 and should then pass its test
-    void setName(){
+        //Test will change the name from maths 2 to Science 2 and should then pass its test
+    void setName() {
         Book a = new Book("Maths 2", "Education", "Maths Department", true);
         a.setName("Science 2");
         assertEquals("Science 2", a.getName());
+    }
+
+
+    @Test
+    void setGenre() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        a.setGenre("Mathematics");
+        assertEquals("Mathematics", a.getGenre());
     }
 }

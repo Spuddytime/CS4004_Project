@@ -33,6 +33,23 @@ public class Book {
 
     // A bunch of getter methods with some setter methods where I see them being viable
 
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void setLateFee(double lateFee) {
+        this.lateFee = lateFee;
+    }
+
+    public void setLengthOfRent(int lengthOfRent) {
+        this.lengthOfRent = lengthOfRent;
+    }
+
     public String getName() {
         return name;
     }
