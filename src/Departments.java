@@ -34,9 +34,6 @@ public class Departments {
         return type;
     }
 
-    public double getBudget() {
-        return budget;
-    }
 
     public void rentBook(Book i){
         if (i.isAvailable()) {

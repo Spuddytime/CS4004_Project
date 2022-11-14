@@ -19,8 +19,8 @@ public class LibraryTest {
     static Departments geographyDepartment;
     static Departments artDepartnment;
 
-    @BeforeAll // I believe this means this will run all the time before any tests take place
-    @Test // Place this before all tests to indicate it is a test
+    //@BeforeAll // I believe this means this will run all the time before any tests take place
+    //@Test // Place this before all tests to indicate it is a test
 
 
 
