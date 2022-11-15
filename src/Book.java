@@ -1,11 +1,11 @@
 //Name:Stephen Walsh ID:21334234 done in IntelliJ with Java 18
 //Integrated into Jira for ease of access: KEY for integration is PROJECT-9
 
-//Not Finished
+//Finished as far as I can see unless we add more methods
 public class Book {
     private String name; //Name of the book
     private String genre; //Genre of the book eg science, fiction etc...
-    private boolean available = true; //is the book valid to be taken, ie is it stocked.
+    private boolean available; //is the book valid to be taken, ie is it stocked.
     private String department; //Spec mentions departments
     private int lengthOfRent; // In days
     private double lateFee; // Fee for late returns to deter tardiness, May go up the more late it is
@@ -42,9 +42,7 @@ public class Book {
         return available;
     }
 
-    // A bunch of getter methods with some setter methods where I see them being viable
-
-
+    // A bunch of getter and setter methods
     public void setDepartment(String department) {
         this.department = department;
     }

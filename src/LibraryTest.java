@@ -7,7 +7,7 @@
 //Will need to come back to this, so I can figure out how JUnit works
 
 public class LibraryTest {
-    // Not exactly sure how this works tbh
+    // Made this early on but might get rid of as I don't see the use if it anymore
 
     static Book a;
     static Book b;

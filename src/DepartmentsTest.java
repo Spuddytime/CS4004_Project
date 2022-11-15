@@ -2,7 +2,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//Integrated into Jira for ease of access: KEY for integration is PROJECT-9
+
 //These fail at the moment so we need to make the programme to fix that
+//I decided to split each class into their own respective class tests for my coverage strategy.
 class DepartmentsTest {
 
     @Test
