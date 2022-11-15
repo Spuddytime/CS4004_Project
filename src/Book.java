@@ -16,11 +16,22 @@ public class Book {
     }
 
 
+    //Basic book constructor
     public Book(String name, String genre, String department, boolean available){
         this.name = name;
         this.genre = genre;
         this.department = department; //What department does the book belong to
         this.available = available;
+    }
+
+    //Constructor for all possible variables associated with it
+    public Book(String name, String genre, String department, boolean available, double lateFee , int lengthOfRent){
+        this.name = name;
+        this.genre = genre;
+        this.department = department; //What department does the book belong to
+        this.available = available;
+        this.lateFee = lateFee;
+        this.lengthOfRent = lengthOfRent;
     }
 
     public void setAvailable(boolean available) {

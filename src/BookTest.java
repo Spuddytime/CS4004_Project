@@ -25,14 +25,14 @@ class BookTest {
     //These 2 Fail as we have not set up these 2 methods yet
     @Test
     void getLateFee() {
-        Book a = new Book("Maths 2", "Education", "Maths Department", true);
-        assertEquals(3.50, a.getLateFee());
+        Book b = new Book("Maths 2", "Education", "Maths Department", true, 3.50,14);
+        assertEquals(3.50, b.getLateFee());
     }
 
     @Test
     void getLengthOfRent() {
-        Book a = new Book("Maths 2", "Education", "Maths Department", true);
-        assertEquals(14, a.getLengthOfRent());
+        Book b = new Book("Maths 2", "Education", "Maths Department", true, 3.50,14);
+        assertEquals(14, b.getLengthOfRent());
     }
 
     @Test
@@ -49,5 +49,39 @@ class BookTest {
         Book a = new Book("Maths 2", "Education", "Maths Department", true);
         a.setGenre("Mathematics");
         assertEquals("Mathematics", a.getGenre());
+    }
+
+    @Test
+    void setAvailable() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        a.setAvailable(false);
+        assertEquals(false, a.isAvailable());
+    }
+
+    @Test
+    void isAvailable() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        assertEquals(true, a.isAvailable());
+    }
+
+    @Test
+    void setDepartment() {
+        Book a = new Book("Maths 2", "Education", "Maths Department", true);
+        a.setDepartment("Education Department");
+        assertEquals("Education Department", a.getDepartment());
+    }
+
+    @Test
+    void setLateFee() {
+        Book b = new Book("Maths 2", "Education", "Maths Department", true, 3.50,14);
+        b.setLateFee(5.00);
+        assertEquals(5.00, b.getLateFee());
+    }
+
+    @Test
+    void setLengthOfRent() {
+        Book b = new Book("Maths 2", "Education", "Maths Department", true, 3.50,14);
+        b.setLengthOfRent(21);
+        assertEquals(21, b.getLengthOfRent());
     }
 }
