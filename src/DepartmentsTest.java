@@ -14,34 +14,33 @@ class DepartmentsTest {
 
     @BeforeAll
     public static void test(){
-        a = new Departments();
-        b = new Departments("Maths Dept","Education",14000.00);
+        b = new Departments("Maths Department","Education",14000.00);
     }
 
     @Test
     void getDepartmentBooks() {
-        assertEquals("Maths 2" , a.getDepartmentBooks());
+        assertEquals("Maths 2" , b.getDepartmentBooks());
     }
 
     @Test
     void getUnavailableBooks() {
-        assertEquals("[Maths 1, Science 2]" , a.getUnavailableBooks());
+        assertEquals("[Maths 1, Science 2]" , b.getUnavailableBooks());
     }
 
     @Test
     void getName() {
-        assertEquals("Maths Department" , a.getName());
+        assertEquals("Maths Department" , b.getName());
     }
 
     @Test
     void getType() {
-        assertEquals("Education" , a.getType());
+        assertEquals("Education" , b.getType());
     }
 
     @Test
     void setName() {
-        a.setName("Maths Department");
-        assertEquals("Maths Department" , a.getName());
+        b.setName("Maths Dept");
+        assertEquals("Maths Dept" , b.getName());
     }
 
     @Test
@@ -58,6 +57,7 @@ class DepartmentsTest {
     @Test
     void isSubscriptionStatus() {
         Departments a = new Departments();
+        assertEquals(true , a.isSubscriptionStatus());
 
     }
 
@@ -70,12 +70,16 @@ class DepartmentsTest {
     @Test
     void setBudget() {
         Departments a = new Departments();
+        a.setBudget(12000.00);
+        assertEquals(12000.00, a.getBudget());
 
     }
 
     @Test
     void setSubscriptionStatus() {
         Departments a = new Departments();
+        a.setSubscriptionStatus(false);
+        assertEquals(false, a.isSubscriptionStatus());
 
     }
 
