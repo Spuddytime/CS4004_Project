@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//All of these current tests now function and pass the test
 class BookTest {
 
     @Test

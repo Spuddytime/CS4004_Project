@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//These fail at the moment so we need to make the programme to fix that
 class DepartmentsTest {
 
     @Test
