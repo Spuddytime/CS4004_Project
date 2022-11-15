@@ -10,7 +10,6 @@ public class Book {
     private int lengthOfRent; // In days
     private double lateFee; // Fee for late returns to deter tardiness, May go up the more late it is
 
-
     public Book() {
 
     }

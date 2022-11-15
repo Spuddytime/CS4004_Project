@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,34 +9,39 @@ import static org.junit.jupiter.api.Assertions.*;
 //I decided to split each class into their own respective class tests for my coverage strategy.
 class DepartmentsTest {
 
+    static Departments a;
+    static Departments b;
+
+    @BeforeAll
+    public static void test(){
+        a = new Departments();
+        b = new Departments("Maths Dept","Education",14000.00);
+    }
+
     @Test
     void getDepartmentBooks() {
-        Departments a = new Departments();
         assertEquals("Maths 2" , a.getDepartmentBooks());
     }
 
     @Test
     void getUnavailableBooks() {
-        Departments a = new Departments();
         assertEquals("[Maths 1, Science 2]" , a.getUnavailableBooks());
     }
 
     @Test
     void getName() {
-        Departments a = new Departments();
         assertEquals("Maths Department" , a.getName());
     }
 
     @Test
     void getType() {
-        Departments a = new Departments();
         assertEquals("Education" , a.getType());
     }
 
     @Test
     void setName() {
-        Departments a = new Departments();
         a.setName("Maths Department");
+        assertEquals("Maths Department" , a.getName());
     }
 
     @Test
@@ -44,4 +50,38 @@ class DepartmentsTest {
         a.setType("Education");
     }
 
+    @Test
+    void getBudget() {
+        assertEquals(14000.00 , b.getBudget());
+    }
+
+    @Test
+    void isSubscriptionStatus() {
+        Departments a = new Departments();
+
+    }
+
+    @Test
+    void setDepartmentBooks() {
+        Departments a = new Departments();
+
+    }
+
+    @Test
+    void setBudget() {
+        Departments a = new Departments();
+
+    }
+
+    @Test
+    void setSubscriptionStatus() {
+        Departments a = new Departments();
+
+    }
+
+    @Test
+    void setUnavailableBooks() {
+        Departments a = new Departments();
+
+    }
 }
