@@ -1,7 +1,7 @@
 public class Library {
     private String name;
-    String membership; // Member of a department or library overall
-    public int staff; // how many staff members are working
+    private String membership; // Member of a department or library overall
+    private int staff; // how many staff members are working
 
     private boolean open;
     private Departments departments;
