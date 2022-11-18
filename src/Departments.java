@@ -22,6 +22,10 @@ public class Departments {
         this.type = type;
         this.budget = budget;
     }
+    public Departments(String name, String type){
+        name = "Maths Department";
+        type = "Education";
+    }
 
     public ArrayList<Book> getDepartmentBooks() {
         return departmentBooks;
