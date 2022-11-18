@@ -6,21 +6,35 @@
 
 //Will need to come back to this, so I can figure out how JUnit works
 
+import org.junit.jupiter.api.Test;
+
 public class LibraryTest {
-    // Made this early on but might get rid of as I don't see the use if it anymore
 
-    static Book a;
-    static Book b;
-    static Book c;
-    static Book d;
-    static Departments scienceDepartnment;
-    static Departments historyDepartnment;
-    static Departments compsciDepartnment;
-    static Departments geographyDepartment;
-    static Departments artDepartnment;
+    @Test
+    void getName() {
+    }
 
-    //@BeforeAll // I believe this means this will run all the time before any tests take place
-    //@Test // Place this before all tests to indicate it is a test
+    @Test
+    void setName() {
+    }
+
+    @Test
+    void isOpen() {
+    }
+
+    @Test
+    void getDepartments() {
+    }
+
+    @Test
+    void setDepartments() {
+    }
+
+    @Test
+    void setOpen() {
+    }
+
+
 
 
 

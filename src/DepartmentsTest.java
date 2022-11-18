@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 //Integrated into Jira for ease of access: KEY for integration is PROJECT-9
@@ -8,12 +10,21 @@ import static org.junit.jupiter.api.Assertions.*;
 //These fail at the moment so we need to make the programme to fix that
 //I decided to split each class into their own respective class tests for my coverage strategy.
 class DepartmentsTest {
+    Book maths1 = new Book();
+    Book maths2 = new Book();
+    Book science1 = new Book();
+    Book science2 = new Book();
+
 
     static Departments a;
     static Departments b;
+    ArrayList<Book> mathsDept = new ArrayList<>();
+
+
 
     @BeforeAll
     public static void test(){
+        ArrayList<Book> mathsDept = new ArrayList<>();
         b = new Departments("Maths Department","Education",14000.00);
     }
 
@@ -63,7 +74,11 @@ class DepartmentsTest {
 
     @Test
     void setDepartmentBooks() {
-        Departments a = new Departments();
+        mathsDept.add(maths1); // I can't for the life of me figure out how to test these arraylist methods -SW
+        mathsDept.add(maths2);
+        mathsDept.add(science1);
+        mathsDept.add(science2);
+        assertEquals("Maths 1", a.getDepartmentBooks());
 
     }
 

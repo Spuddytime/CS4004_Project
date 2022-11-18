@@ -33,6 +33,17 @@ public class Book {
         this.lengthOfRent = lengthOfRent;
     }
 
+    public Book maths1(String name, String genre, String department, boolean available){
+        this.name = "Maths 1";
+        this.genre = "Education";
+        this.department = "Maths Department";
+        this.available = true;
+
+        return null;
+    }
+
+
+
     public void setAvailable(boolean available) {
         this.available = available;
     }
