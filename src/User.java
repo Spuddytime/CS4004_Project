@@ -1,4 +1,3 @@
-//Author Rodger Shaw
 public class User {
     private String name;
     private int id;
@@ -28,6 +27,6 @@ public class User {
         return password;
     }
 
+
+
 }
-
-
