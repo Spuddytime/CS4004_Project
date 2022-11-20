@@ -2,8 +2,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-//Author Rodger Shaw
-
 public class UserTest {
 
     static User user1;
